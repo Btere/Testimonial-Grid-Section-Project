@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "Barlow Semi Condensed";
+  src: url(https://fonts.google.com/specimen/Barlow+Semi+Condensed);
+}
+
+body {
+  height: 100vh;
+}
+
+.testimonialContent {
+  background-color: hsl(210, 46%, 95%);
+  height: 95vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px 30px;
+  margin: 50px;
+}
+
+.daniel-info {
+  background-color: hsl(263, 55%, 52%);
+  border-radius: 10px;
+  grid-column: 1 / span 2;
+  padding: 10px;
+}
+
+.quote-icon {
+  float: right;
+  margin-right: 10px;
+}
+
+.flex {
+  display: flex;
+  font-family: "Barlow Semi Condensed";
+
+  color: hsl(0, 0%, 100%);
+  gap: 3px;
+  justify-content: flex-start;
+  white-space: nowrap;
+}
+
+.userinfo {
+  line-height: 1.6px;
+  padding: 10px;
+}
+
+p:hover {
+  opacity: 50%;
+}
+
+.reviewArea {
+  text-align: justify;
+  font-size: 13px;
+  font-family: "Barlow Semi Condensed";
+}
+
+.course-review {
+  color: hsl(0, 0%, 100%);
+}
+
+.work-review {
+  color: hsl(0, 0%, 100%);
+  text-align: left;
+  padding: 5px;
+}
+
+.work-review:hover {
+  opacity: 70%;
+  transform: scale(0.95);
+}
+.image {
+  border-radius: 50%;
+  width: 50px;
+  border-width: 2px;
+  height: 50px;
+}
+.image.purpleBorder {
+  border-color: hsl(263, 55%, 52%);
+  border-style: solid;
+}
+
+.jonathan-info {
+  background-color: hsl(217, 19%, 35%);
+  border-radius: 10px;
+  justify-content: center;
+  padding: 5%;
+}
+
+.kira-info {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  text-align: start;
+  grid-column: 4;
+  grid-row: 1 / span 2;
+  padding: 5px;
+  letter-spacing: 0px;
+}
+
+.black-text {
+  color: black;
+}
+
+.JeanetteHarmon-info {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  padding: 15px;
+  letter-spacing: 0px;
+}
+
+.PatrickAbrams-info {
+  background-color: black;
+  border-radius: 10px;
+  padding: 15px;
+  grid-column: 2 / span 2;
+  color: hsl(0, 0%, 100%);
+}
+/* mobile media screen */
+@media screen and (max-width: 480px) {
+  body {
+    height: 100%;
+    background-color: hsl(210, 46%, 95%);
+  }
+  .testimonialContent {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .testimonialContent p {
+    font-size: 10px;
+  }
+
+  .daniel-info {
+    order: 1;
+  }
+
+  .PatrickAbrams-info {
+    order: 4;
+  }
+
+  .JeanetteHarmon-info {
+    order: 3;
+  }
+
+  .kira-info {
+    order: 5;
+  }
+
+  .jonathan-info {
+    order: 2;
+  }
+  .attribution {
+    order: 6;
+  }
+}
